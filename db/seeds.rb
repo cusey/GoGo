@@ -6,3 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Worker.create(name:"Tiger Nixon", position:"System Architect", office:"System Architect", age:61, startDate:2011/04/2, price:320800.00)

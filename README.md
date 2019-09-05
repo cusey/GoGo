@@ -34,4 +34,16 @@ $ rake db:migrate
 
 * Deployment instructions
 
-* ...
+## Rails Console 
+
+If get cannot load such file error message when trying to run the rails console from the termial window.  
+
+[rails console require cannot load such file readline - stack overflow](https://stackoverflow.com/questions/34875379/rails-console-require-cannot-load-such-file-readline/34876928)     
+
+Readline gem is required by your application but not specified in your Gemfile
+
+Please add this to your gem file
+
+```
+gem 'rb-readline' 
+```
