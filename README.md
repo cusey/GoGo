@@ -13,7 +13,8 @@ by John Cusey
 * Database creation
 
 ```
-user@e91e7c2031e9:/projects/web-rails-simple$ rails generate model worker name:string position:string office:string age:integer startDate:date 'price:decimal{10,2}'
+$ rails generate model worker name:string position:string office:string age:integer startDate:date 'price:decimal{10,2}'
+
 Running via Spring preloader in process 543
       invoke  active_record
       create    db/migrate/20190905173317_create_workers.rb
@@ -21,6 +22,8 @@ Running via Spring preloader in process 543
       invoke    test_unit
       create      test/models/worker_test.rb
       create      test/fixtures/workers.yml
+      
+$ rake db:migrate
 ```
 
 * Database initialization
