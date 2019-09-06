@@ -145,3 +145,55 @@ irb(main):021:0* helper.format_name(Worker.first)
             ORDER BY "workers"."id" ASC LIMIT ?  [["LIMIT", 1]]
 => "Sir Tiger Nixon"
 ```
+
+* # Unit Testing
+
+## Rspec Unit Test Code
+
+```
+require 'rspec'
+
+class ReportHelper
+    
+    def format_name(worker_name,worker_gender)
+        
+        if "M"  == worker_gender
+          return "Mr. #{worker_name}"
+        else
+          return "Ms. #{worker_name}"
+        end
+          
+    end 
+    
+end
+
+describe ReportHelper do
+  it 'English honorific to name' do
+    helper = ReportHelper.new
+    expect(helper.format_name("John Cusey","M")).to eq("Mr. John Cusey")
+  end
+end
+```
+**_spec/helper/report_helper_spec.rb_**
+
+## Run the Unit Test     
+
+```
+$ bundle exec rspec spec/helper/report_helper_spec.rb
+
+
+Finished in 0.003 seconds (files took 0.10963 seconds to load)
+1 example, 0 failures
+```
+
+
+
+
+
+
+
+
+
+
+
+
