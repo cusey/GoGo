@@ -142,4 +142,5 @@ irb(main):021:0* helper.format_name(Worker.first)
 
   Worker Load (0.2ms)  SELECT  "workers".* FROM "workers" 
             ORDER BY "workers"."id" ASC LIMIT ?  [["LIMIT", 1]]
-=> "
+=> "Sir Tiger Nixon"
+```
