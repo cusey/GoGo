@@ -22,7 +22,7 @@ $(document).ready(function() {
   <tbody>
     <% @workers.each do |worker| %>
       <tr>
-        <td><%= worker.name %></td>
+        <td><%= format_name (worker.name) %></td>
         <td><%= worker.position %></td>
         <td><%= worker.office %></td>
         <td><%= worker.age %></td>
