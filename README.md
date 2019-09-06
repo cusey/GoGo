@@ -127,9 +127,10 @@ ActiveRecord::RecordNotFound: Couldn't find Worker with 'id'=1
 ```
 module ReportHelper
     
-    def format_name(worker)
-        return "Sir #{worker.name}"
-    end    
+    def format_name(name)
+        return "Sir #{name}"
+    end 
+    
 end
 ```
 GoGo/app/helpers/report_helper.rb
