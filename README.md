@@ -4,16 +4,22 @@
 by John Cusey
 
 
-* Ruby version
+* # Ruby version
 
-* System dependencies
+* #  System dependencies
 
-* Configuration
+* #  Configuration
 
-* Database creation
+* #  Database creation
 
 ```
-$ rails generate model worker name:string position:string office:string age:integer startDate:date 'price:decimal{10,2}'
+$ rails generate model worker 
+            name:string 
+            position:string 
+            office:string 
+            age:integer 
+            startDate:date 
+            'price:decimal{10,2}'
 
 Running via Spring preloader in process 543
       invoke  active_record
@@ -26,17 +32,34 @@ Running via Spring preloader in process 543
 $ rake db:migrate
 ```
 
-* Database initialization
+*  # Database initialization
 
-* How to run the test suite
+[db/seeds](https://github.com/cusey/GoGo/blob/master/db/seeds.rb)
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rake db:seed
+```
 
-* Deployment instructions
 
-* Rails Console 
+*  # How to run the test suite
 
-## Errors
+* # Services (job queues, cache servers, search engines, etc.)
+
+*  # Deployment instructions
+
+*  # Rails Console 
+
+## Starting Console
+
+```
+$ rails console
+
+Running via Spring preloader in process 576
+Loading development environment (Rails 5.0.7)
+irb(main):001:0>
+```
+
+## Errors Starting Console
 
 If get cannot load such file error message when trying to run the rails console from the termial window.  
 
@@ -53,8 +76,18 @@ gem 'rb-readline'
 ## Select First Row
 ```
 irb(main):004:0> Worker.find(1)
-  Worker Load (0.2ms)  SELECT  "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
-=> #<Worker id: 1, name: "Tiger Nixon", position: "System Architect", office: "System Architect", age: 61, startDate: 251, price: 0.3208e6, created_at: "2019-09-05
+
+  Worker Load (0.2ms)  SELECT  "workers".* FROM "workers" 
+            WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
+=> #<Worker 
+            id: 1, 
+            name: "Tiger Nixon", 
+            position: "System Architect", 
+            office: "System Architect", 
+            age: 61, 
+            startDate: 251, 
+            price: 0.3208e6, 
+            created_at: "2019-09-05
 17:46:56", updated_at: "2019-09-05 17:46:56">
 ```
 
@@ -62,12 +95,51 @@ irb(main):004:0> Worker.find(1)
 
 ```
 irb(main):007:0> w1.destroy
+
    (0.1ms)  begin transaction
-  SQL (0.3ms)  DELETE FROM "workers" WHERE "workers"."id" = ?  [["id", 1]]
+  SQL (0.3ms)  DELETE FROM "workers" 
+            WHERE "workers"."id" = ?  [["id", 1]]
+            
    (2.9ms)  commit transaction
-=> #<Worker id: 1, name: "Tiger Nixon", position: "System Architect", office: "System Architect", age: 61, startDate: 251, price: 0.3208e6, created_at: "2019-09-05
+=> #<Worker 
+            id: 1, 
+            name: "Tiger Nixon", 
+            position: "System Architect", 
+            office: "System Architect", 
+            age: 61, 
+            startDate: 251, 
+            price: 0.3208e6, 
+            created_at: "2019-09-05
 17:46:56", updated_at: "2019-09-05 17:46:56">
+```
+Checking if record is in the database
+
+```
 irb(main):008:0> Worker.find(1)
-  Worker Load (0.1ms)  SELECT  "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
+
+  Worker Load (0.1ms)  SELECT  "workers".* FROM "workers" 
+            WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
 ActiveRecord::RecordNotFound: Couldn't find Worker with 'id'=1
 ```
+
+## Calling Helper Method from console 
+
+```
+module ReportHelper
+    
+    def format_name(name)
+        return "Sir #{name}"
+    end 
+    
+end
+```
+GoGo/app/helpers/report_helper.rb
+
+You need to added the "helper" before the method name when using the ruby console    
+
+```
+irb(main):021:0* helper.format_name(Worker.first)
+
+  Worker Load (0.2ms)  SELECT  "workers".* FROM "workers" 
+            ORDER BY "workers"."id" ASC LIMIT ?  [["LIMIT", 1]]
+=> "
