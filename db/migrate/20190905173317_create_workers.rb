@@ -5,6 +5,7 @@ class CreateWorkers < ActiveRecord::Migration[5.0]
       t.string :position
       t.string :office
       t.integer :age
+      t.string :gender
       t.date :startDate
       t.decimal :price, precision: 10, scale: 2
 

@@ -22,11 +22,11 @@ $(document).ready(function() {
   <tbody>
     <% @workers.each do |worker| %>
       <tr>
-        <td><%= format_name (worker.name) %></td>
+        <td><%= format_name(worker.name, worker.gender) %></td>
         <td><%= worker.position %></td>
         <td><%= worker.office %></td>
         <td><%= worker.age %></td>
-        <td><%= worker.price %></td>
+        <td><%= number_to_currency(worker.price) %></td>
        
       </tr>
     <% end %>

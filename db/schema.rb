@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20190905173317) do
     t.string   "position"
     t.string   "office"
     t.integer  "age"
+    t.string   "gender"
     t.date     "startDate"
     t.decimal  "price",      precision: 10, scale: 2
     t.datetime "created_at",                          null: false

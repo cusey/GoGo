@@ -17,6 +17,7 @@ $ rails generate model worker
             name:string 
             position:string 
             office:string 
+            gender:string
             age:integer 
             startDate:date 
             'price:decimal{10,2}'
