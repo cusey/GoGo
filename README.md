@@ -121,3 +121,15 @@ irb(main):008:0> Worker.find(1)
             WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
 ActiveRecord::RecordNotFound: Couldn't find Worker with 'id'=1
 ```
+
+## Calling Helper Method from console 
+
+You need to added the "helper" before the method name when using the ruby console    
+
+```
+irb(main):021:0* helper.format_name(Worker.first)
+
+  Worker Load (0.2ms)  SELECT  "workers".* FROM "workers" 
+            ORDER BY "workers"."id" ASC LIMIT ?  [["LIMIT", 1]]
+=> "Sir Tiger Nixon"
+```
