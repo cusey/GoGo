@@ -13,7 +13,13 @@ by John Cusey
 * Database creation
 
 ```
-$ rails generate model worker name:string position:string office:string age:integer startDate:date 'price:decimal{10,2}'
+$ rails generate model worker 
+            name:string 
+            position:string 
+            office:string 
+            age:integer 
+            startDate:date 
+            'price:decimal{10,2}'
 
 Running via Spring preloader in process 543
       invoke  active_record
