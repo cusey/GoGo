@@ -192,12 +192,12 @@ describe ReportHelper do
   end
 end
 ```
-**_spec/helper/report_helper_spec.rb_**
+**_spec/helpers/report_helper_spec.rb_**
 
 ## Run the Unit Test     
 
 ```
-$ bundle exec rspec spec/helper/report_helper_spec.rb
+$ bundle exec rspec spec/helpers/report_helper_spec.rb
 
 
 Finished in 0.003 seconds (files took 0.10963 seconds to load)
