@@ -34,6 +34,13 @@ $ rake db:migrate
 
 *  # Database initialization
 
+[db/seeds](https://github.com/cusey/GoGo/blob/master/db/seeds.rb)
+
+```
+$ rake db:seed
+```
+
+
 *  # How to run the test suite
 
 * # Services (job queues, cache servers, search engines, etc.)
