@@ -148,6 +148,24 @@ irb(main):021:0* helper.format_name(Worker.first)
 
 * # Unit Testing
 
+## Setting up Rspec
+
+```
+$ bin/rspec --init
+   exist   .rspec
+   exist   spec/spec_helper.rb
+```
+Checking the version of Rspec
+
+```
+$ bin/rspec --version
+RSpec 3.6
+  - rspec-core 3.6.0
+  - rspec-expectations 3.6.0
+  - rspec-mocks 3.6.0
+  - rspec-support 3.6.0
+```
+
 ## Rspec Unit Test Code
 
 ```
