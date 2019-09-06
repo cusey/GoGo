@@ -104,7 +104,10 @@ irb(main):007:0> w1.destroy
             price: 0.3208e6, 
             created_at: "2019-09-05
 17:46:56", updated_at: "2019-09-05 17:46:56">
+```
+Checking if record is in the database
 
+```
 irb(main):008:0> Worker.find(1)
 
   Worker Load (0.1ms)  SELECT  "workers".* FROM "workers" 
