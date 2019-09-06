@@ -124,6 +124,16 @@ ActiveRecord::RecordNotFound: Couldn't find Worker with 'id'=1
 
 ## Calling Helper Method from console 
 
+```
+module ReportHelper
+    
+    def format_name(worker)
+        return "Sir #{worker.name}"
+    end    
+end
+```
+GoGo/app/helpers/report_helper.rb
+
 You need to added the "helper" before the method name when using the ruby console    
 
 ```
