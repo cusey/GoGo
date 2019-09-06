@@ -69,8 +69,18 @@ gem 'rb-readline'
 ## Select First Row
 ```
 irb(main):004:0> Worker.find(1)
-  Worker Load (0.2ms)  SELECT  "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
-=> #<Worker id: 1, name: "Tiger Nixon", position: "System Architect", office: "System Architect", age: 61, startDate: 251, price: 0.3208e6, created_at: "2019-09-05
+
+  Worker Load (0.2ms)  SELECT  "workers".* FROM "workers" 
+            WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
+=> #<Worker 
+            id: 1, 
+            name: "Tiger Nixon", 
+            position: "System Architect", 
+            office: "System Architect", 
+            age: 61, 
+            startDate: 251, 
+            price: 0.3208e6, 
+            created_at: "2019-09-05
 17:46:56", updated_at: "2019-09-05 17:46:56">
 ```
 
@@ -78,12 +88,26 @@ irb(main):004:0> Worker.find(1)
 
 ```
 irb(main):007:0> w1.destroy
+
    (0.1ms)  begin transaction
-  SQL (0.3ms)  DELETE FROM "workers" WHERE "workers"."id" = ?  [["id", 1]]
+  SQL (0.3ms)  DELETE FROM "workers" 
+            WHERE "workers"."id" = ?  [["id", 1]]
+            
    (2.9ms)  commit transaction
-=> #<Worker id: 1, name: "Tiger Nixon", position: "System Architect", office: "System Architect", age: 61, startDate: 251, price: 0.3208e6, created_at: "2019-09-05
+=> #<Worker 
+            id: 1, 
+            name: "Tiger Nixon", 
+            position: "System Architect", 
+            office: "System Architect", 
+            age: 61, 
+            startDate: 251, 
+            price: 0.3208e6, 
+            created_at: "2019-09-05
 17:46:56", updated_at: "2019-09-05 17:46:56">
+
 irb(main):008:0> Worker.find(1)
-  Worker Load (0.1ms)  SELECT  "workers".* FROM "workers" WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
+
+  Worker Load (0.1ms)  SELECT  "workers".* FROM "workers" 
+            WHERE "workers"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
 ActiveRecord::RecordNotFound: Couldn't find Worker with 'id'=1
 ```
