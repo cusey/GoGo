@@ -1,7 +1,7 @@
 ![CuseyHub](https://github.com/cusey/ImageForWiki/blob/master/Logos/CuseyHub_Banner_Small.jpg)
 
 # GoGo
-by John Cusey
+By John Cusey
 
 
 * # Ruby version
