@@ -197,10 +197,10 @@ end
 ## Run the Unit Test     
 
 ```
-$ bundle exec rspec spec/helpers/report_helper_spec.rb
+$ rspec spec/helpers/report_helper_spec.rb
+.
 
-
-Finished in 0.003 seconds (files took 0.10963 seconds to load)
+Finished in 0.00552 seconds (files took 0.24514 seconds to load)
 1 example, 0 failures
 ```
 
