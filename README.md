@@ -256,6 +256,8 @@ HelloWorld
 ```
 Terminal Window
 
+[How to use Byebug in Rails development](https://www.youtube.com/watch?v=YX3EQvCUHsg)
+
 
 
 
