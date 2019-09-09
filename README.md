@@ -258,6 +258,65 @@ Terminal Window
 
 [How to use Byebug in Rails development](https://www.youtube.com/watch?v=YX3EQvCUHsg)
 
+* # Pry
+
+When you start the web server you will see the following messages. 
+
+```  
+=> Booting Puma
+=> Rails 5.0.7.2 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+
+Puma starting in single mode...
+
+* Version 3.12.1 (ruby 2.4.4-p296), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+
+```
+
+Then reload the webpage and in the server terminal window you will see the following output.
+
+```
+Started GET "/report/index" for 216.81.81.82 at 2019-09-09 17:17:19 +0000
+Cannot render console from 216.81.81.82! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ReportController#index as HTML
+From: /projects/web-rails-simple/app/controllers/report_controller.rb @ line 5 ReportController#index:
+ 
+    2: def index
+    3: 
+    4:   @workers = Worker.all
+ => 5:   binding.pry
+    6:   
+    7: end 
+
+[0G[1] pry(#<ReportController>)>   Rendering report/index.html.erb within layouts/application
+  [1m[36mWorker Load (0.4ms)[0m  [1m[34mSELECT "workers".* FROM "workers"[0m
+  Rendered report/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 34ms (Views: 25.0ms | ActiveRecord: 1.1ms)
+```
+Open new terminal window and you will get the pry main input line. 
+
+```
+$ pry -r ./config/environment
+
+[1] pry(main)> Worker.all
+=> [#<Worker:0x000056272267f990
+  id: 1,
+  name: "Tiger Nixon",
+  position: "System Architect",
+  office: "Edinburgh",
+  age: 61,
+  gender: "M",
+  startDate: 251,
+  price: 0.3208e6,
+  created_at: Mon, 09 Sep 2019 16:46:51 UTC +00:00,
+  updated_at: Mon, 09 Sep 2019 16:46:51 UTC +00:00>,
+```
+ [Ruby on Rails - Railscasts #280 Pry With Rails](https://www.youtube.com/watch?v=KfFf2-KJNTU&t=89s)   
+
 
 
 

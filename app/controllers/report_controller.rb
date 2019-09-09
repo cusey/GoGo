@@ -1,6 +1,8 @@
 class ReportController < ApplicationController
   def index
+    
     @workers = Worker.all
-    byebug
+    binding.pry
+    
   end
 end

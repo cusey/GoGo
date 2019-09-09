@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
   get 'report/index'
 
   get 'activity/index'
