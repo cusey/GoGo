@@ -197,10 +197,12 @@ end
 ## Run the Unit Test     
 
 ```
-$ rspec spec/helpers/report_helper_spec.rb
-.
+$ rspec spec/helpers/report_helper_spec.rb --format documentation
 
-Finished in 0.00552 seconds (files took 0.24514 seconds to load)
+ReportHelper
+  English honorific to name
+
+Finished in 0.00139 seconds (files took 0.08836 seconds to load)
 1 example, 0 failures
 ```
 
