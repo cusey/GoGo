@@ -206,8 +206,55 @@ Finished in 0.00139 seconds (files took 0.08836 seconds to load)
 1 example, 0 failures
 ```
 
+* # Byebug
 
+Byebug is a Ruby 2 debugger.
 
+```
+class HelloWorld
+   def say_hello 
+      "Hello World!"
+   end
+end
+```
+**_app/models/hello_world.rb_**
+
+```
+require 'byebug'
+
+require_relative '../../app/models/hello_world'
+
+describe HelloWorld do 
+    it "should say 'Hello World' when we call the say_hello method" do 
+         hw = HelloWorld.new 
+         message = hw.say_hello 
+         byebug
+         expect(message).to eq "Hello World!"
+    end
+end
+```
+**_spec/helpers/hello_helper_spec.rb_**
+
+```
+$ rspec spec --format documentation
+
+HelloWorld
+
+[4, 13] in /projects/web-rails-simple/spec/helpers/hello_world_spec.rb
+    4:
+    5: describe HelloWorld do
+    6:     it "should say 'Hello World' when we call the say_hello method" do
+    7:          hw = HelloWorld.new
+    8:          message = hw.say_hello
+    9:          byebug
+=> 10:          expect(message).to eq "Hello World!"
+   11:     end
+   12: end
+   13:
+(byebug) message
+"Hello World!"
+```
+Terminal Window
 
 
 
