@@ -9,9 +9,6 @@ end
 # be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
 gem 'pry'
 
-# Rack::Cors provides support for Cross-Origin Resource Sharing (CORS) for Rack compatible web application
-gem 'rack-cors'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use sqlite3 as the database for Active Record
