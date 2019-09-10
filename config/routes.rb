@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'cities/index'
+
   root 'welcome#index'
 
   get 'report/index'

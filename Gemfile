@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'ajax-datatables-rails', github: 'ajahongir/ajax-datatables-rails', branch: 'v-0-4-0'
+gem 'rails_script'
+gem 'js-routes'
+gem 'responders' # if you are using rails 4.2+
+
 # Pry is a runtime developer console and IRB alternative with powerful introspection capabilities. Pry aims to
 # be more than an IRB replacement. It is an attempt to bring REPL driven programming to the Ruby language.
 gem 'pry'
