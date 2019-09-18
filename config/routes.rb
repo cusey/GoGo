@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'article/index'
+
   get 'cities/index'
   
   get 'users/index'

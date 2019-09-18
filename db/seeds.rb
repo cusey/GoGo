@@ -41,3 +41,8 @@ Worker.create(name:"Quinn Flynn", position:"Junior Technical Author", office:"Ne
 Worker.create(name:"Charde Marshall", position:"Junior Technical Author", office:"Edinburgh", age:64, gender:"F", startDate:2001/4/8, price:320800.00)
 
 Worker.create(name:"Haley Kennedy", position:"Junior Technical Author", office:"Edinburgh", age:60, gender:"F", startDate:2002/4/7, price:320800.00)
+
+Article.create(aurthor_last_name:"Rippetoe", aurthor_first_name:"Mark", title:"Starting Strength")
+Article.create(aurthor_last_name:"Lauren", aurthor_first_name:"Jim", title:"You Are Your Own Gym")
+Article.create(aurthor_last_name:"Venuto", aurthor_first_name:"Tom", title:"Burn the Fat, Feed the Muscle")
+Article.create(aurthor_last_name:"Clear", aurthor_first_name:"James", title:"Atomic Habits")
