@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'article/index'
+  get '/last/:id' => 'article#last'
 
   get 'cities/index'
   
