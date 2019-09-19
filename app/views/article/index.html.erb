@@ -1,4 +1,49 @@
-<h1>Article#index</h1>
-<p>Find me in app/views/article/index.html.erb</p>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+
+
+
+
+<h1><%= format_title ( 'Article') %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aurthor Last Name</th>
+      <th>Aurthor First Name</th>
+      <th>Title</th>
+    
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.aurthor_last_name %></td>
+        <td><%= article.aurthor_first_name %></td>
+        <td><%= article.title %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
 
 <%= link_to 'Home', root_path %>
