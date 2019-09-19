@@ -3,8 +3,11 @@ class ArticleController < ApplicationController
     @articles = Article.all
   end
   
+  # /last/Rippetoe
+  
   def last
+      @article = Article.get_last_name(params[:id])
 
-     Article.last(params[:aurthor_last_name])
+      render plain: ''+ @article.inspect
   end
 end

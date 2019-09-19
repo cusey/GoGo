@@ -1,3 +1,3 @@
 class Article < ApplicationRecord
-    # scope :last, -> (name){ where(aurthor_last_name: name)}
+    scope :get_last_name, -> (name){ where(author_last_name: name)}
 end
