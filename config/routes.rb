@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'users/index'
 
   root 'welcome#index'
+  
+  post 'welcome/new'
 
   get 'report/index'
 
