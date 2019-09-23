@@ -43,10 +43,10 @@ Worker.create(name:"Charde Marshall", position:"Junior Technical Author", office
 
 Worker.create(name:"Haley Kennedy", position:"Junior Technical Author", office:"Edinburgh", age:60, gender:"F", startDate:2002/4/7, price:320800.00)
 
-Article.create(author_last_name:"Rippetoe", author_first_name:"Mark", title:"Starting Strength")
-Article.create(author_last_name:"Lauren", author_first_name:"Jim", title:"You Are Your Own Gym")
-Article.create(author_last_name:"Venuto", author_first_name:"Tom", title:"Burn the Fat, Feed the Muscle")
-Article.create(author_last_name:"Clear", author_first_name:"James", title:"Atomic Habits")
+Article.create(author_last_name:"Rippetoe", author_first_name:"Mark", title:"Starting Strength", rating:0)
+Article.create(author_last_name:"Lauren", author_first_name:"Jim", title:"You Are Your Own Gym", rating:0)
+Article.create(author_last_name:"Venuto", author_first_name:"Tom", title:"Burn the Fat, Feed the Muscle", rating:0)
+Article.create(author_last_name:"Clear", author_first_name:"James", title:"Atomic Habits", rating:0)
 
 Task.create(title:"Yard Work", description:"raking falls and moaning the grass", completed:false)
 Task.create(title:"Bed", description:"making up the bed", completed:false)

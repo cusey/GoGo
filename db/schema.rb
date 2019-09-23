@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20190923163423) do
   create_table "articles", force: :cascade do |t|
     t.string   "author_last_name"
     t.string   "author_first_name"
+    t.integer  "rating"
     t.string   "title"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
