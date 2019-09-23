@@ -2,13 +2,22 @@
 
 <h5>Household Chores</h5>
 
+<%= form_tag(complete_tasks_path, method: :put)  do %> 
+
   <% for task in @tasks %> 
     <ul style="list-style-type: none;">
       <li>
-        <%= check_box_tag 'task_id', task.id %>  
+        <%= check_box_tag 'task_id[]', task.id %>  
         <%= task.title %> ( <%= task.description %> )
       </li>
     </ul>
   <% end %>
+  
+   <%= submit_tag 'Submit Tasks' %>
+   
+<% end %>
+
+<hr>
+<br>
 
 <%= link_to 'Home', root_path %>

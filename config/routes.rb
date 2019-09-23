@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :tasks
   get 'component/index'
+  
+  put 'complete_task', to: 'component#complete', as: :complete_tasks  
 
   get 'article/index'
   get '/last/:id' => 'article#last'
