@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'component/index'
+
   get 'article/index'
   get '/last/:id' => 'article#last'
 
