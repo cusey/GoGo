@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tasks
   get 'component/index'
 
   get 'article/index'

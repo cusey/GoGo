@@ -18,6 +18,7 @@ Worker.create(name:"Airi Satou", position:"Accountant", office:"Tokyo", age:33, 
 
 Worker.create(name:"Brielle Williamson", position:"Integration Specialis", office:"New York", age:61, gender:"F", startDate:2012/12/2, price:372000.00)
 
+
 Worker.create(name:"Herrod Chandler", position:"Sales Assistant", office:"San Francisco", age:59, gender:"M", startDate:2012/8/6, price:320800.00)
 
 Worker.create(name:"Cedric Kelly", position:"Senior Javascript Developer", office:"Edinburgh", age:34, gender:"M", startDate:2009/4/2, price:320800.00)
@@ -46,3 +47,8 @@ Article.create(author_last_name:"Rippetoe", author_first_name:"Mark", title:"Sta
 Article.create(author_last_name:"Lauren", author_first_name:"Jim", title:"You Are Your Own Gym")
 Article.create(author_last_name:"Venuto", author_first_name:"Tom", title:"Burn the Fat, Feed the Muscle")
 Article.create(author_last_name:"Clear", author_first_name:"James", title:"Atomic Habits")
+
+Task.create(title:"Yard Work", description:"raking falls and moaning the grass", completed:false)
+Task.create(title:"Bed", description:"making up the bed", completed:false)
+Task.create(title:"Kitchen", description:"doing the dishes", completed:false)
+Task.create(title:"Living Room", description:"sweeping the floor" , completed:false)

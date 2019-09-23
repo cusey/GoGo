@@ -1,13 +1,29 @@
 <h1> Welcome</h1>
 
-<%= button_to "New", {:action => "new"}, {:class => "btn btn-primary m-3"} %>
+<br>
 
+<h5>Datatable Population Options</h5>
 <%= link_to 'Reports', report_index_path %> |
- <%= link_to 'Activities', activity_index_path %> | 
-    <%= link_to 'Cities', cities_index_path %> | 
-        <%= link_to 'Users',  users_index_path %> |
-            <%= link_to 'Articles',  article_index_path %> |
-               <a href="last/Rippetoe">Last Name</a> | 
-                    <%= link_to 'Components', component_index_path %>
+<%= link_to 'Activities', activity_index_path %> | 
+<%= link_to 'Cities', cities_index_path %> 
+
+<hr>
+<br>
+
+<h5>Backend calls</h5>    
+<%= link_to 'Users',  users_index_path %> |   
+<a href="last/Rippetoe">Last Name</a>
+
+<hr>
+<br>
+
+<h5>Webpage Components</h5> 
+
+<hr>
+<br>
+
+
+<%= button_to "New Welcome Message", {:action => "new"}, {:class => "btn btn-primary m-3"} %>
+                    
         
         

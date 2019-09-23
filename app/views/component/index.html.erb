@@ -1,5 +1,14 @@
 <h1>Components</h1>
 
+<h5>Household Chores</h5>
 
+  <% for task in @tasks %> 
+    <ul style="list-style-type: none;">
+      <li>
+        <%= check_box_tag 'task_id', task.id %>  
+        <%= task.title %> ( <%= task.description %> )
+      </li>
+    </ul>
+  <% end %>
 
 <%= link_to 'Home', root_path %>
