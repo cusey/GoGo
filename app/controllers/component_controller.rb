@@ -2,7 +2,7 @@ class ComponentController < ApplicationController
   def index
     @tasks = Task.all
     @article = Article.all
-    @ranking = [1,2,3,4,5]
+    @ranking = [0,1,2,3,4,5]
   end
   
   
@@ -14,6 +14,11 @@ class ComponentController < ApplicationController
   end
   
   def complete_rating
+    for article in Article.all
+        Article.where(id: article).update_all(rating: params["#{article.id}_rating"])
+    end
+    
+    redirect_to article_index_path
   end
 
 
