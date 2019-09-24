@@ -28,14 +28,15 @@
 
  <div style="margin-left:60px;">
  <% for article in @article %> 
-    <%= article.author_first_name %> <%= article.author_last_name %> 
+    <div style="margin-bottom:15px;">
+    <%= article.author_first_name %> <%= article.author_last_name %> <span style="margin-left:100px;"></span>
     
     <%  @ranking.each do |rank| %>
-      <%= rank %> <%= radio_button_tag "#{article.id}_rating", rank %>
+        <%= radio_button_tag "#{article.id}_rating", rank %>  <%= rank %> &nbsp;
     <% end %>
     
-   <br>
-  
+    <br>
+    </div>
    
   <% end %>
   </div>
