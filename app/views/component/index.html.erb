@@ -23,14 +23,25 @@
 
 <h5>Rating Authors</h5>
 
+
 <%= form_tag(complete_rating_path, method: :put)  do %> 
 
+ <div style="margin-left:60px;">
+ <% for article in @article %> 
+    <%= article.author_first_name %> <%= article.author_last_name %> 
+    
     <%  @ranking.each do |rank| %>
-      <%= rank %>
+      <%= rank %> <%= radio_button_tag "#{article.id}_rating", rank %>
     <% end %>
     
    <br>
-   <%= submit_tag 'Submit Rating' %>
+  
+   
+  <% end %>
+  </div>
+  <br> 
+  
+  <%= submit_tag 'Submit Rating' %>
 
 <% end %>
 

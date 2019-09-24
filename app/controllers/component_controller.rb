@@ -1,6 +1,7 @@
 class ComponentController < ApplicationController
   def index
-    @tasks = Task.all 
+    @tasks = Task.all
+    @article = Article.all
     @ranking = [1,2,3,4,5]
   end
   
