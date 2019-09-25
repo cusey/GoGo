@@ -8,7 +8,7 @@ class TodoListsController < ApplicationController
   def index
     @todo_lists = TodoList.all
     
-    @note = location_time
+    @time = location_time
   end
 
   # GET /todo_lists/1
