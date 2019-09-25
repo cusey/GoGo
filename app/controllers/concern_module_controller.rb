@@ -1,6 +1,6 @@
 class ConcernModuleController < ApplicationController
   
-  include Priority
+  include Unit::Priority
   
   def index
     @time = location_time
