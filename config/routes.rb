@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :todo_lists
+  get 'concern_module/index'
+
   resources :tasks
   get 'component/index'
   

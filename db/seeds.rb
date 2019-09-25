@@ -52,3 +52,10 @@ Task.create(title:"Yard Work", description:"raking falls and moaning the grass",
 Task.create(title:"Bed", description:"making up the bed", completed:false)
 Task.create(title:"Kitchen", description:"doing the dishes", completed:false)
 Task.create(title:"Living Room", description:"sweeping the floor" , completed:false)
+
+
+TodoList.create(title:"Yard", description:"Fence and gates building and maintenance" )
+TodoList.create(title:"Roof", description:"Roofing installation and gutter cleaning" )
+TodoList.create(title:"Kitchen", description:"Fence and gates building and maintenance" )
+TodoList.create(title:"Bedroom", description:"Painting services and drywall" )
+TodoList.create(title:"Hallway", description:"Rail installations" )
