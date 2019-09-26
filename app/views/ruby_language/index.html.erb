@@ -1,4 +1,44 @@
+<style>
+#code { 
+  font-family: monospace;
+  padding: 10px;
+  background-color: lightblue;
+}
+</style>
+
+
+
 <h1>Ruby Language</h1>
 
+<br>
+<br>
+<h5> Return false unless a value is true in which case return the value</h5>
+
+<div id="code">
+<p>def checkit(value)</p>
+  <p> &nbsp; &nbsp; value || false</p>
+<p>end</p>
+</div>
+<br>
+
+
+<% def checkit(value) %>
+<%   value || false   %>
+<% end %>
+
+ <p>checkit(1) = <%= checkit(1)  %>  </p>
+ <p>checkit(false) = <%= checkit(false)  %> </p>
+ <p>checkit('Jim Smith') = <%= checkit('Jim Smith')  %>  </p>
+ <p>checkit(nil) = <%= checkit(nil)  %>  </p>
+
+
+<hr>
+
+
+
+
+
+<br>
+<br>
 <%= link_to 'Home', root_path %>
 
