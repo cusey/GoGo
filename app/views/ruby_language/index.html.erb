@@ -12,7 +12,8 @@
 
 <br>
 <br>
-<h5> Return false unless a value is true in which case return the value</h5>
+<h5><b>Or Statement</b></h5>
+<p> Return false unless a value is true in which case return the value</p>
 
 <div id="code">
 <p>def checkit(value)</p>
@@ -30,7 +31,22 @@
  <p>checkit(false) = <%= checkit(false)  %> </p>
  <p>checkit('Jim Smith') = <%= checkit('Jim Smith')  %>  </p>
  <p>checkit(nil) = <%= checkit(nil)  %>  </p>
+ 
+ <h5><b>unless Statement</b> <h5>
+ <p>Executes code if conditional is false. If the conditional is true, code specified in the else clause is executed.</p>
+ 
+<div id="code">
+    <p>$var1 = 1</p>
+    <p>$var2 = false</p>
+</div>
+<br>
 
+ <% $var1 = 1%>
+ <% $var2 = false %>
+ 
+ <p>'John' if $var1 = <%= 'John' if $var1 %></p>
+ <p>'John' unless $var1 = <%= 'John' unless $var1 %></p> 
+ <p>'John' unless $var2 = <%= 'John' unless $var2 %></p>
 
 <hr>
 
