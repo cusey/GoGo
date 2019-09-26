@@ -9,6 +9,8 @@ class TodoListsController < ApplicationController
     @todo_lists = TodoList.all
     
     @time = location_time
+    
+    @Profiles = Profiles
   end
 
   # GET /todo_lists/1
