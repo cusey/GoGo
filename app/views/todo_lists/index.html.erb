@@ -31,6 +31,8 @@ tr:nth-child(even) {
     <tr>
       <th>Title</th>
       <th>Description</th>
+      <th>Profiles</th>
+      <th>Category</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -40,6 +42,8 @@ tr:nth-child(even) {
       <tr>
         <td><%= todo_list.title %></td>
         <td><%= todo_list.description %></td>
+        <td><%= todo_list.profiles %></td>
+        <td><%= todo_list.category %></td>
         <td><%= link_to 'Show', todo_list %></td>
         <td><%= link_to 'Edit', edit_todo_list_path(todo_list) %></td>
         <td><%= link_to 'Destroy', todo_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>

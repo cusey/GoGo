@@ -54,8 +54,9 @@ Task.create(title:"Kitchen", description:"doing the dishes", completed:false)
 Task.create(title:"Living Room", description:"sweeping the floor" , completed:false)
 
 
-TodoList.create(title:"Yard", description:"Fence and gates building and maintenance" )
-TodoList.create(title:"Roof", description:"Roofing installation and gutter cleaning" )
-TodoList.create(title:"Kitchen", description:"Fence and gates building and maintenance" )
-TodoList.create(title:"Bedroom", description:"Painting services and drywall" )
-TodoList.create(title:"Hallway", description:"Rail installations" )
+TodoList.create(title:"Yard", description:"Fence and gates building and maintenance", profiles:1, category:1 )
+TodoList.create(title:"Roof", description:"Roofing installation and gutter cleaning", profiles:2, category:1  )
+TodoList.create(title:"Kitchen", description:"Fence and gates building and maintenance", profiles:0, category:2  )
+TodoList.create(title:"Bedroom", description:"Painting services and drywall", profiles:1, category:2  )
+TodoList.create(title:"Hallway", description:"Rail installations", profiles:2, category:0  )
+

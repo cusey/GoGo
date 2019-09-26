@@ -39,6 +39,8 @@ ActiveRecord::Schema.define(version: 20190925135054) do
   create_table "todo_lists", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
+    t.integer  "profiles"
+    t.integer  "category"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

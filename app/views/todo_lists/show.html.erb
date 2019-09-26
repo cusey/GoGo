@@ -10,5 +10,15 @@
   <%= @todo_list.description %>
 </p>
 
+<p>
+  <strong>Profiles:</strong>
+  <%= @todo_list.profiles %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @todo_list.category %>
+</p>
+
 <%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
 <%= link_to 'Back', todo_lists_path %>
