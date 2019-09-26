@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'ruby_language/index'
+
   resources :todo_lists
   get 'concern_module/index'
 
