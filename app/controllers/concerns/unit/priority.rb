@@ -5,15 +5,16 @@ module Unit
       extend ActiveSupport::Concern
       
         Profiles = {
-            2 => [['Admin','Super User'],['Help Desk']],
-            1 => [ ['Data Enter','Technician'],['User']],
-            0 => []
-      
-        }
+            2 => ['Administration','Super User','Help Desk'], # IT Support Team
+            1 => ['Data Enter','Customers','Call Center Users'], # Users of Company Webpage
+            0 => ['Accountant', 'Programmer', 'Maintenance Technician'] # Business Organization
+         }
   
       
-      def location_time
-        return Time.zone.today
-      end
+        def location_time
+            return Time.zone.today
+        end
+        
+        
     end
 end
