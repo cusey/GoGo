@@ -20,6 +20,9 @@ class ComponentController < ApplicationController
     
     redirect_to article_index_path
   end
+  
+  def message
+  end
 
 
 end

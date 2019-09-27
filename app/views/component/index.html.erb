@@ -1,3 +1,12 @@
+<style>
+#code { 
+  font-family: monospace;
+  padding: 10px;
+  background-color: lightblue;
+}
+</style>
+
+
 <h1><i>Components</i></h1>
 <br>
 
@@ -46,6 +55,18 @@
 
 <% end %>
 
+
+<hr>
+<br>
+
+<h5>Rendering Partial Page</h5>
+
+<div id="code">
+<p> &lt; %= render "component/message" % &gt</p>
+</div>
+<br>
+
+<%= render "component/message" %>
 
 <hr>
 <br>
