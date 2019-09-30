@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'uploads/index'
+
   get 'ruby_language/index'
 
   resources :todo_lists
