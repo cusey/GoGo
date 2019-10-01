@@ -4,13 +4,13 @@ one:
   attachmentFileName: MyString
   attachmentFileSize: 1
   contactId: 1
-  processedAt: 2019-10-01 16:44:23
+  processedAt: 2019-10-01 17:52:15
   status: MyString
   organizationId: 1
   uploaderContactId: 1
   type: 
   attachmentContentType: MyString
-  attachmentUpdatedAt: 2019-10-01 16:44:23
+  attachmentUpdatedAt: 2019-10-01 17:52:15
   totalRecords: 1
   autoProcess: false
 
@@ -18,12 +18,12 @@ two:
   attachmentFileName: MyString
   attachmentFileSize: 1
   contactId: 1
-  processedAt: 2019-10-01 16:44:23
+  processedAt: 2019-10-01 17:52:15
   status: MyString
   organizationId: 1
   uploaderContactId: 1
   type: 
   attachmentContentType: MyString
-  attachmentUpdatedAt: 2019-10-01 16:44:23
+  attachmentUpdatedAt: 2019-10-01 17:52:15
   totalRecords: 1
   autoProcess: false
