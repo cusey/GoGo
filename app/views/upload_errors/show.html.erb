@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uploadresultid:</strong>
+  <%= @upload_error.uploadResultId %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @upload_error.message %>
+</p>
+
+<%= link_to 'Edit', edit_upload_error_path(@upload_error) %> |
+<%= link_to 'Back', upload_errors_path %>

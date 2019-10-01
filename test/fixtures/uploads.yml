@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  attachmentFileName: MyString
+  attachmentFileSize: 1
+  contactId: 1
+  processedAt: 2019-10-01 16:44:23
+  status: MyString
+  organizationId: 1
+  uploaderContactId: 1
+  type: 
+  attachmentContentType: MyString
+  attachmentUpdatedAt: 2019-10-01 16:44:23
+  totalRecords: 1
+  autoProcess: false
+
+two:
+  attachmentFileName: MyString
+  attachmentFileSize: 1
+  contactId: 1
+  processedAt: 2019-10-01 16:44:23
+  status: MyString
+  organizationId: 1
+  uploaderContactId: 1
+  type: 
+  attachmentContentType: MyString
+  attachmentUpdatedAt: 2019-10-01 16:44:23
+  totalRecords: 1
+  autoProcess: false
