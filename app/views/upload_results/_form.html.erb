@@ -1,0 +1,37 @@
+<%= form_for(upload_result) do |f| %>
+  <% if upload_result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(upload_result.errors.count, "error") %> prohibited this upload_result from being saved:</h2>
+
+      <ul>
+      <% upload_result.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uploadId %>
+    <%= f.number_field :uploadId %>
+  </div>
+
+  <div class="field">
+    <%= f.label :source %>
+    <%= f.text_field :source %>
+  </div>
+
+  <div class="field">
+    <%= f.label :resourceId %>
+    <%= f.number_field :resourceId %>
+  </div>
+
+  <div class="field">
+    <%= f.label :isValid %>
+    <%= f.check_box :isValid %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

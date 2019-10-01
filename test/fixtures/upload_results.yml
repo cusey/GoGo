@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uploadId: 1
+  source: MyString
+  resourceId: 1
+  isValid: false
+
+two:
+  uploadId: 1
+  source: MyString
+  resourceId: 1
+  isValid: false

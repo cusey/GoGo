@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :upload_results
   resources :upload_errors
   resources :uploads
   get 'excel_uploads/index'

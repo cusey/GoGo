@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191001180029) do
+ActiveRecord::Schema.define(version: 20191001183102) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "author_last_name"
@@ -50,6 +50,15 @@ ActiveRecord::Schema.define(version: 20191001180029) do
     t.string   "message"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+  end
+
+  create_table "upload_results", force: :cascade do |t|
+    t.integer  "uploadId"
+    t.string   "source"
+    t.integer  "resourceId"
+    t.boolean  "isValid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "uploads", force: :cascade do |t|

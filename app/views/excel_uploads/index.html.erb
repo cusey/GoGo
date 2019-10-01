@@ -1,5 +1,21 @@
 <h3>Upload File</h3>
+<br>
+<br>
+
+<%= form_for @upload do |f| %>
 
 
+
+    <%= f.check_box(:auto_process, :checked => true) %>
+    <%= f.label(:auto_process, "Auto-Save Valid Results") %>
+    <br>
+
+    <%= f.submit("Process Upload") %>
+    <br>
+
+<% end %>
+
+<br>
+<br>
 
 <%= link_to 'Home', root_path %>
