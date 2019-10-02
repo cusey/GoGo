@@ -1,5 +1,5 @@
 class ExcelUploadsController < ApplicationController
   def index
-    @upload = Upload.new
+    @excelUpload = Upload.new
   end
 end
