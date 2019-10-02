@@ -12,7 +12,7 @@ fieldset {
 </style>
 
 
-<%= form_for @upload do |f| %>
+<%= form_for @upload, :html => { :multipart => true }  do |f| %>
 
     <fieldset class="inputs">
 

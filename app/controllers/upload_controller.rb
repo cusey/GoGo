@@ -13,4 +13,9 @@ class UploadController < ApplicationController
   def update
     puts "****> uploads#update"
   end
+  
+  def upload
+    puts "****> uploads#upload"
+    file_data = params[:attachment]
+  end
 end
