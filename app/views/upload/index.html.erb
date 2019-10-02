@@ -14,9 +14,58 @@ fieldset {
 
 <%= form_for @upload do |f| %>
 
-    <%= f.submit("Process Upload") %>
+    <fieldset class="inputs">
+
+    <legend id="upload_attributes_legend">
+      <span>Upload Attributes</span>
+    </legend>
+       
+        <legend class="label">
+           <label>Upload Type (*)</label>
+        </legend>
+    
+        <%= f.radio_button(:type, "RequestUpload", :checked => true) %>
+        <%= f.label("type_requestupload", "Request") %>
+        <br>
+        
+        <%= f.radio_button(:type, "ConfirmationUpload", :checked => false) %>
+        <%= f.label("type_confirmationupload", "Confirmation") %>
+        <br>
+        
+        <%= f.label(:type, "Upload Type:", :id => "vendor_upload_type_label") %>
+        <%= f.label(nil, "Confirmation", :id => "vendor_upload_type_confirmation") %>
+        <%= f.hidden_field(:type, :value => "ConfirmationUpload") %>
+        <br>
+        
+        <hr> <!--  *** Upload Type ***  -->
+        
+        <%= f.label(:attachment, "Attachment (*)", :id => "upload_attachment_label") %>
+        <br>
+        
+        <%= f.label(:organization_name, "Organization (*)", :id => "upload_organization_label") %>
+        <br>
+        
+
+        
+        <%= f.label(:contact_id, "Contact (*)", :id => "upload_contact_label") %>
+        <br>
+
+        
+                
+
+        <%= f.check_box(:auto_process, :checked => true) %>
+        <%= f.label(:auto_process, "Auto-Save Valid Results") %>
+        <br>
+    
+        <%= f.submit("Process Upload") %>
+        <br>
+        
+    </fieldset>
+        
+        
 
 <% end %>
+
 <br>
 <br>
 
