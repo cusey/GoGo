@@ -1,17 +1,35 @@
-<h3>Upload File</h3>
-<br>
-<br>
+<style>
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove;
+}
+</style>
 
 <%= form_for @upload do |f| %>
 
+    <fieldset class="inputs">
+
+    <legend id="upload_attributes_legend">
+      <span>Upload Attributes</span>
+    </legend>
 
 
-    <%= f.check_box(:auto_process, :checked => true) %>
-    <%= f.label(:auto_process, "Auto-Save Valid Results") %>
-    <br>
-
-    <%= f.submit("Process Upload") %>
-    <br>
+        <%= f.check_box(:auto_process, :checked => true) %>
+        <%= f.label(:auto_process, "Auto-Save Valid Results") %>
+        <br>
+    
+        <%= f.submit("Process Upload") %>
+        <br>
+        
+    </fieldset>
+        
+        
 
 <% end %>
 
