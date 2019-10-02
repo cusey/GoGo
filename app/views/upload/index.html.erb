@@ -1,2 +1,24 @@
-<h1>Upload#index</h1>
-<p>Find me in app/views/upload/index.html.erb</p>
+<style>
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove;
+}
+</style>
+
+
+<%= form_for @upload do |f| %>
+
+    <%= f.submit("Process Upload") %>
+
+<% end %>
+<br>
+<br>
+
+<%= link_to 'Home', root_path %>
+
