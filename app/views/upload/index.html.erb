@@ -40,6 +40,7 @@ fieldset {
         <hr> <!--  *** Upload Type ***  -->
         
         <%= f.label(:attachment, "Attachment (*)", :id => "upload_attachment_label") %>
+        <%= f.file_field( "attachment", :size => 100, :maxlength => 255) %>
         <br>
         
         <%= f.label(:organization_name, "Organization (*)", :id => "upload_organization_label") %>
