@@ -1,11 +1,7 @@
 Rails.application.routes.draw do
-  resources :upload_results
-  resources :upload_errors
-  resources :uploads
-  get 'excel_uploads/index'
 
-  get 'uploads/index'
-
+  get 'upload_index' => "upload#index"
+ 
   get 'ruby_language/index'
 
   resources :todo_lists
