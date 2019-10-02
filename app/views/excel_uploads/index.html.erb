@@ -30,7 +30,27 @@ fieldset {
         <%= f.radio_button(:type, "ConfirmationUpload", :checked => false) %>
         <%= f.label("type_confirmationupload", "Confirmation") %>
         <br>
-        <hr>
+        
+        <%= f.label(:type, "Upload Type:", :id => "vendor_upload_type_label") %>
+        <%= f.label(nil, "Confirmation", :id => "vendor_upload_type_confirmation") %>
+        <%= f.hidden_field(:type, :value => "ConfirmationUpload") %>
+        <br>
+        
+        <hr> <!--  *** Upload Type ***  -->
+        
+        <%= f.label(:attachment, "Attachment (*)", :id => "upload_attachment_label") %>
+        <br>
+        
+        <%= f.label(:organization_name, "Organization (*)", :id => "upload_organization_label") %>
+        <br>
+        
+
+        
+        <%= f.label(:contact_id, "Contact (*)", :id => "upload_contact_label") %>
+        <br>
+
+        
+                
 
         <%= f.check_box(:auto_process, :checked => true) %>
         <%= f.label(:auto_process, "Auto-Save Valid Results") %>
