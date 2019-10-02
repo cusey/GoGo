@@ -18,7 +18,19 @@ fieldset {
     <legend id="upload_attributes_legend">
       <span>Upload Attributes</span>
     </legend>
-
+       
+        <legend class="label">
+           <label>Upload Type (*)</label>
+        </legend>
+    
+        <%= f.radio_button(:type, "RequestUpload", :checked => true) %>
+        <%= f.label("type_requestupload", "Request") %>
+        <br>
+        
+        <%= f.radio_button(:type, "ConfirmationUpload", :checked => false) %>
+        <%= f.label("type_confirmationupload", "Confirmation") %>
+        <br>
+        <hr>
 
         <%= f.check_box(:auto_process, :checked => true) %>
         <%= f.label(:auto_process, "Auto-Save Valid Results") %>
