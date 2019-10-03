@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'uploads' => "upload#create"
-  post 'uploads' => "upload#update"
-
-  get 'upload_index' => "upload#index"
- 
   get 'ruby_language/index'
 
   resources :todo_lists
