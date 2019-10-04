@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Attachmentfilename:</strong>
+  <%= @upload.attachmentFileName %>
+</p>
+
+<p>
+  <strong>Attachmentfilesize:</strong>
+  <%= @upload.attachmentFileSize %>
+</p>
+
+<p>
+  <strong>Contactid:</strong>
+  <%= @upload.contactId %>
+</p>
+
+<p>
+  <strong>Processedat:</strong>
+  <%= @upload.processedAt %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @upload.status %>
+</p>
+
+<p>
+  <strong>Organizationid:</strong>
+  <%= @upload.organizationId %>
+</p>
+
+<p>
+  <strong>Uploadercontactid:</strong>
+  <%= @upload.uploaderContactId %>
+</p>
+
+<p>
+  <strong>Uploadtype:</strong>
+  <%= @upload.uploadType %>
+</p>
+
+<p>
+  <strong>Attachmentcontenttype:</strong>
+  <%= @upload.attachmentContentType %>
+</p>
+
+<p>
+  <strong>Attachmentupdatedat:</strong>
+  <%= @upload.attachmentUpdatedAt %>
+</p>
+
+<p>
+  <strong>Totalrecords:</strong>
+  <%= @upload.totalRecords %>
+</p>
+
+<p>
+  <strong>Autoprocess:</strong>
+  <%= @upload.autoProcess %>
+</p>
+
+<%= link_to 'Edit', edit_upload_path(@upload) %> |
+<%= link_to 'Back', uploads_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190925135054) do
+ActiveRecord::Schema.define(version: 20191003190420) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "author_last_name"
@@ -43,6 +43,23 @@ ActiveRecord::Schema.define(version: 20190925135054) do
     t.integer  "category"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "uploads", force: :cascade do |t|
+    t.string   "attachmentFileName"
+    t.integer  "attachmentFileSize"
+    t.integer  "contactId"
+    t.datetime "processedAt"
+    t.string   "status"
+    t.integer  "organizationId"
+    t.integer  "uploaderContactId"
+    t.string   "uploadType"
+    t.string   "attachmentContentType"
+    t.datetime "attachmentUpdatedAt"
+    t.integer  "totalRecords"
+    t.boolean  "autoProcess"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "workers", force: :cascade do |t|

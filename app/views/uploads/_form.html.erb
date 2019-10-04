@@ -1,0 +1,77 @@
+<%= form_for(upload) do |f| %>
+  <% if upload.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(upload.errors.count, "error") %> prohibited this upload from being saved:</h2>
+
+      <ul>
+      <% upload.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :attachmentFileName %>
+    <%= f.text_field :attachmentFileName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attachmentFileSize %>
+    <%= f.number_field :attachmentFileSize %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contactId %>
+    <%= f.number_field :contactId %>
+  </div>
+
+  <div class="field">
+    <%= f.label :processedAt %>
+    <%= f.datetime_select :processedAt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :organizationId %>
+    <%= f.number_field :organizationId %>
+  </div>
+
+  <div class="field">
+    <%= f.label :uploaderContactId %>
+    <%= f.number_field :uploaderContactId %>
+  </div>
+
+  <div class="field">
+    <%= f.label :uploadType %>
+    <%= f.text_field :uploadType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attachmentContentType %>
+    <%= f.text_field :attachmentContentType %>
+  </div>
+
+  <div class="field">
+    <%= f.label :attachmentUpdatedAt %>
+    <%= f.datetime_select :attachmentUpdatedAt %>
+  </div>
+
+  <div class="field">
+    <%= f.label :totalRecords %>
+    <%= f.number_field :totalRecords %>
+  </div>
+
+  <div class="field">
+    <%= f.label :autoProcess %>
+    <%= f.check_box :autoProcess %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

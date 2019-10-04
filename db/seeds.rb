@@ -1,3 +1,7 @@
+# ############ #
+# Worker       #
+# ############ #
+
 Worker.create(name:"Tiger Nixon", position:"System Architect", office:"Edinburgh", age:61, gender:"M", startDate:2011/4/2, price:320800.00 )
 Worker.create(name:"Garrett Winters", position:"Accountant", office:"Tokyo", age:63, gender:"M", startDate:2011/7/25, price:170750.00)
 Worker.create(name:"Ashton Cox", position:"Junior Technical Author", office:"San Francisco", age:61, gender:"M", startDate:2011/1/12, price:86000.00)
@@ -17,18 +21,40 @@ Worker.create(name:"Quinn Flynn", position:"Junior Technical Author", office:"Ne
 Worker.create(name:"Charde Marshall", position:"Junior Technical Author", office:"Edinburgh", age:64, gender:"F", startDate:2001/4/8, price:320800.00)
 Worker.create(name:"Haley Kennedy", position:"Junior Technical Author", office:"Edinburgh", age:60, gender:"F", startDate:2002/4/7, price:320800.00)
 
+# ############ #
+# Article      #
+# ############ #
+
 Article.create(author_last_name:"Rippetoe", author_first_name:"Mark", title:"Starting Strength", rating:0)
 Article.create(author_last_name:"Lauren", author_first_name:"Jim", title:"You Are Your Own Gym", rating:0)
 Article.create(author_last_name:"Venuto", author_first_name:"Tom", title:"Burn the Fat, Feed the Muscle", rating:0)
 Article.create(author_last_name:"Clear", author_first_name:"James", title:"Atomic Habits", rating:0)
+
+# ############ #
+# Task         #
+# ############ #
 
 Task.create(title:"Yard Work", description:"raking falls and moaning the grass", completed:false)
 Task.create(title:"Bed", description:"making up the bed", completed:false)
 Task.create(title:"Kitchen", description:"doing the dishes", completed:false)
 Task.create(title:"Living Room", description:"sweeping the floor" , completed:false)
 
+# ############ #
+# TodoList     #
+# ############ #
+
 TodoList.create(title:"Yard", description:"Fence and gates building and maintenance", profiles:1, category:1 )
 TodoList.create(title:"Roof", description:"Roofing installation and gutter cleaning", profiles:2, category:1  )
 TodoList.create(title:"Kitchen", description:"Fence and gates building and maintenance", profiles:0, category:2  )
 TodoList.create(title:"Bedroom", description:"Painting services and drywall", profiles:1, category:2  )
 TodoList.create(title:"Hallway", description:"Rail installations", profiles:2, category:0  )
+
+# ############ #
+# Upload       #
+# ############ #
+
+Upload.create(attachmentFileName:"Test1", attachmentFileSize:1, contactId:1, processedAt:"2019-10-04 20:13:00", status:"NEW", organizationId:1, uploaderContactId:1, uploadType:nil, attachmentContentType:"text/csv", attachmentUpdatedAt:"2019-10-04 20:13:00", totalRecords:1, autoProcess:true, created_at:"2019-10-04 20:13:58", updated_at:"2019-10-04 20:13:58")
+Upload.create(attachmentFileName:"Test2", attachmentFileSize:1, contactId:1, processedAt:"2019-10-04 20:13:00", status:"NEW", organizationId:1, uploaderContactId:1, uploadType:nil, attachmentContentType:"text/csv", attachmentUpdatedAt:"2019-10-04 20:13:00", totalRecords:1, autoProcess:true, created_at:"2019-10-04 20:13:58", updated_at:"2019-10-04 20:13:58")
+Upload.create(attachmentFileName:"Test3", attachmentFileSize:1, contactId:1, processedAt:"2019-10-04 20:13:00", status:"NEW", organizationId:1, uploaderContactId:1, uploadType:nil, attachmentContentType:"text/csv", attachmentUpdatedAt:"2019-10-04 20:13:00", totalRecords:1, autoProcess:true, created_at:"2019-10-04 20:13:58", updated_at:"2019-10-04 20:13:58")
+Upload.create(attachmentFileName:"Test4", attachmentFileSize:1, contactId:1, processedAt:"2019-10-04 20:13:00", status:"NEW", organizationId:1, uploaderContactId:1, uploadType:nil, attachmentContentType:"text/csv", attachmentUpdatedAt:"2019-10-04 20:13:00", totalRecords:1, autoProcess:true, created_at:"2019-10-04 20:13:58", updated_at:"2019-10-04 20:13:58")
+Upload.create(attachmentFileName:"Test5", attachmentFileSize:1, contactId:1, processedAt:"2019-10-04 20:13:00", status:"NEW", organizationId:1, uploaderContactId:1, uploadType:nil, attachmentContentType:"text/csv", attachmentUpdatedAt:"2019-10-04 20:13:00", totalRecords:1, autoProcess:true, created_at:"2019-10-04 20:13:58", updated_at:"2019-10-04 20:13:58")
