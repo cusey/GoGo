@@ -38,7 +38,9 @@ $ rake db:migrate
 [db/seeds](https://github.com/cusey/GoGo/blob/master/db/seeds.rb)
 
 ```
-$ rake db:seed
+$ bundle intstall
+$ rails db:migrate
+$ rails db:seed
 ```
 
 
